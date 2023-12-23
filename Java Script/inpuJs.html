@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Intro</title>
+        <script>
+            function add(){
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+                var c = Number(a)+Number(b);
+                document.getElementById("Result").innerHTML="<h1>"+c+"</h1>";
+
+                var a = document.getElementById("Result").style.fontSize="30px";
+                var a = document.getElementById("Result").style.backgroundColor="#000";
+                var a = document.getElementById("Result").style.color="#fff";
+                
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="a" placeholder="Enter A" value="2"/>
+        <br>
+        <input type="number" id="b" placeholder="Enter B"/>
+        <br>
+        <button type="button" onclick="add()">Add</button>
+        <br>
+        <div id="Result">Result</div>
+    </body>
+</html>

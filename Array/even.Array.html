@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function arrayFilter(){
+                let arr = [2,3,7,9,8,5,6,4,3,5,6]
+                let json ={"data":[{"name":"Boomika","age":"20","gender":"female"},
+                {"name":"Boomika","age":"20","gender":"female"},
+                {"name":"Ashwini","age":"23","gender":"female"},
+                {"name":"Ram","age":"17","gender":"male"},
+                {"name":"Koki","age":"21","gender":"female"},
+                {"name":"Ravi","age":"60","gender":"male"},
+                {"name":"Kavi","age":"45","gender":"female"}]}
+
+                kidsArray = json.data.filter(user => user.age <18)
+                mapArray = json.data.map(user => `${user.name} ${user.age}/${user.gender.substring(0,1).toUpperCase()}`); 
+                alert(`Kids ${JSON.stringify(kidsArray)}`)
+                alert(`Map ${mapArray}`)
+
+               // let evenArray = arr.filter(n=> (n%2) == 0);
+                //let oddArray = arr.filter(n=> (n%2) == 1);
+
+                //let mapArray = arr.map(e=> e*2);
+                //alert(`sqrt number: ${mapArray}`);
+
+                //alert(`Even number: ${evenArray}`);
+                //alert(`Odd number: ${oddArray}`);
+
+            }
+
+            arrayFilter();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

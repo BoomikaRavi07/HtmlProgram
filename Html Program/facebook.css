@@ -1,0 +1,23 @@
+#left{
+    background-color: #6693e1;
+    height:515px;
+    width:250px;
+    position: absolute;
+    top: 125px;
+}
+#right{
+    background-color: #e17866;
+    height:515px;
+    width:250px;
+    position: absolute;
+    right: 0px;
+    top: 125px;
+    overflow: scroll;
+}
+#top{
+    background-color: #13daac;
+    height: 125px;
+    width: 1279px;
+    position: absolute;
+    top: 0px;
+}

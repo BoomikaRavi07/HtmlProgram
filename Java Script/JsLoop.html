@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background: #eee;
+        }
+        .page-container{
+            margin-top:40px;  
+            margin-left: 80px; 
+        }
+        figure.user-card {
+            background: #ffffff;
+            padding: 20px;
+            border-top: 3px solid #f2f2f2;
+            text-align: center;
+        }
+    
+         figure.user-card.green {
+            border-top: 3px solid #0aebb7;
+        }
+
+        figure.user-card.blue {
+            border-top: 3px solid #0b90e9;
+        }
+    
+        figure.user-card.pink {
+            border-top: 3px solid #da12a8;
+        }
+
+        figure.user-card.black {
+            border-top: 3px solid #0f1214;
+        }
+
+        figure.user-card.orange {
+            border-top: 3px solid #cd970f;
+        }
+
+        figure.user-card.yellow {
+            border-top: 3px solid #2c06a7;
+        }
+
+        figure.user-card.red {
+            border-top: 3px solid #d00505;
+        }
+
+        figure.user-card.violet {
+            border-top: 3px solid #f1049a;
+        }
+
+        figure.user-card .profile { 
+            border-radius: 50px;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        figure.user-card h5 {
+            margin: 0 0 5px 0;
+        }
+    
+        figure.user-card h6 {
+            margin: 0 0 15px 0;
+            color: #8796af;
+            font-size: 14px;
+        }
+    
+        figure.user-card p {
+            margin: 0;
+            padding-bottom: 15px;
+            color: #8796af;
+            line-height: 150%;
+            font-size: 14px;
+        }
+    
+        figure.user-card ul.contacts {
+            margin: 0;
+            padding: 0 0 15px 0;
+            line-height: 150%;
+            font-size: 14px;
+        }
+    
+        figure.user-card ul.contacts li {
+            padding: 3px 0;
+        }
+    
+        figure.user-card ul.contacts li a {
+            color: #5a99ee;
+        }
+    
+        figure.user-card ul.contacts li a i {
+            min-width: 36px;
+            float: left;
+            font-size: 16px;
+        }
+    
+        figure.user-card ul.contacts li:last-child a {
+            color: #e2620e;
+        }
+    
+        ul li {
+            list-style-type: none;
+        }
+
+        .badge{
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function loadContent() {
+            let users = {"data": [{"name": "Amsharaj","image": "image/profile_1.jpg", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Ranjithkumar","image": "image/profile_2.jpg", "username": "@Ranjith", "des": "Test desr", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Java", "#DSA"]},{"name": "Amsharaj","image": "image/profile_3.jpg", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_4.png", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_5.png", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_6.png", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_7.png", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_8.png", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_1.jpg", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_1.jpg", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]},{"name": "Amsharaj","image": "image/profile_1.jpg", "username": "@movies", "des": "On the 28 of the octombeghd djcg djhcgsj djcgsifhsi djghsifsio  sdjgshidahdhias dsjasgjhdiashdha", "email":"user@bootdey.com", "site":"www.bootdey.com", "tags":["#HTML5", "#CSS3", "#Angular JS"]}]};
+
+            let htmlContent = "";
+            users.data.forEach((user,index) => {
+                htmlContent = htmlContent + '<div style="width: 330px;height: 400px;display: inline-block;">';
+                htmlContent = htmlContent + '<figure class="user-card green">'
+                htmlContent = htmlContent + '<figcaption>'
+                htmlContent = htmlContent + '<img src="'+user.image+'" class="profile">'
+                htmlContent = htmlContent + ' <h5>'+user.name+'</h5>';
+                htmlContent = htmlContent + '<h6>'+user.username+'</h6>';
+                htmlContent = htmlContent + '<p>'+user.des+'</p>';
+                htmlContent = htmlContent + '<ul class="contacts">';
+                htmlContent = htmlContent + '<li>';
+                htmlContent = htmlContent + '<a href="#">'+user.email+'</a>';
+                htmlContent = htmlContent + '</li><li>';
+                htmlContent = htmlContent + '<a href="#">'+user.site+'</a>';
+                htmlContent = htmlContent + '</li></ul>';
+                htmlContent = htmlContent + '<div class="clearfix">';
+                let tagColors = ["bg-info", "bg-success"]
+                user.tags.forEach((tag, i) => {
+                    if (i%2 == 0){
+                        htmlContent = htmlContent + '<span class="badge badge-pill '+tagColors[0]+'">'+tag+'</span>';
+                    }
+                    else{
+                        htmlContent = htmlContent + '<span class="badge badge-pill '+tagColors[1]+'">'+tag+'</span>';
+                    }
+                })
+                htmlContent = htmlContent + '</div></figcaption></figure></div>';
+            });
+
+            console.log(htmlContent);
+            document.getElementById("users").innerHTML = htmlContent;
+            
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container page-container">
+        <div class="row gutters" id="users">
+           
+        </div>
+    </div>
+    <script>
+        loadContent();
+    </script>
+</body>
+</html>

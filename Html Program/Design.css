@@ -1,0 +1,21 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    background-color: #fff;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    background-color:#067fd0;
+
+}
+.topleft{
+   
+    color: #fff;
+}
+.topright{
+    
+    color: #fff;
+}

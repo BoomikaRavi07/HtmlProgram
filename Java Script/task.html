@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body{
+    margin-top:20px;
+    background:#f8f8f8
+    }
+    .avatar--md .avatar__content img{
+    width:40px;
+    height:40px;
+}
+    </style>
+    <script>
+        let snippet1 = ""
+        let left = { 
+            "data": [
+                { "name": "Harvey Blick", "img": "https://bootdey.com/img/Content/avatar/avatar1.png", "sub": "Pennsylvania, SD","text":"text-success" },
+                { "name": "Hobart Hintz", "img": "https://bootdey.com/img/Content/avatar/avatar2.png", "sub": "North Carolina, CT","text":"text-warning" }, 
+                { "name": "Elmore Cummerata", "img": "https://bootdey.com/img/Content/avatar/avatar3.png", "sub": "Michigan, NC","text":"text-danger" }] }
+        let input = {
+            "data": [{ "title": "Ergonomic real-time adapter", "edit": "Savanah Durgan", "date": "Sunday, 12 June, 2018", "per": "50", "status": "Active", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar1.png" },{ "title": "Stand-alone clear-thinking initiative", "edit": "Brando Gutkowski", "date": "Sunday, 12 December, 2018", "per": "90", "status": "Suspended", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar2.png" },{ "title": "Configurable homogeneous knowledge user", "edit": "Wilmer Gorczany", "date": "Tuesday, 12 June, 2018", "per": "70", "status": "Waiting", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar3.png" },
+                { "title": "Progressive 3rd generation superstructure", "edit": "Eden Green", "date": "Sunday, 12 June, 2018", "per": "30", "status": "Paused", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar4.png" },
+                { "title": "Virtual intermediate portal", "edit": "Gregoria Hagenes", "date": "Sunday, 12 June, 2018", "per": "20", "status": "Active", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar5.png" },
+                { "title": "EVisionary client-server hardware", "edit": "Haskell Mills", "date": "Sunday, 12 June, 2018", "per": "10", "status": "Suspended", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar6.png" },
+                { "title": "Focused context-sensitive hardware", "edit": "Rey Hansen", "date": "Sunday, 12 march, 2018", "per": "66", "status": "Waiting", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar7.png" },
+                { "title": "Advanced mission-critical groupware", "edit": "Carey Runolfsson", "date": "Saturday, 12 February, 2018", "per": "45", "status": "paused", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar8.png" },
+                { "title": "Ergonomic real-time adapter", "edit": "Savanah Durgan", "date": "Sunday, 12 June, 2018", "per": "50", "status": "Active", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar1.png" },
+                { "title": "Stand-alone clear-thinking initiative", "edit": "Brando Gutkowski", "date": "Sunday, 12 December, 2018", "per": "90", "status": "Suspended", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar2.png" },
+                { "title": "Configurable homogeneous knowledge user", "edit": "Wilmer Gorczany", "date": "Tuesday, 12 June, 2018", "per": "70", "status": "Waiting", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar3.png" },
+                { "title": "Progressive 3rd generation superstructure", "edit": "Eden Green", "date": "Sunday, 12 June, 2018", "per": "30", "status": "Paused", "tc": "36/94", "img": "https://bootdey.com/img/Content/avatar/avatar4.png" },
+                ]}
+        function snippet() {
+            snippet1 = `${snippet1}<div class="col-lg-3">
+                <div class="mb-4">
+                    <div class="small mb-3">Search</div>
+                    <div class="input-group">
+                        <input placeholder="Search for..." type="text" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="small mb-3">Favorites</div>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-fw fa-line-chart mr-2"></i>Overview</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-fw fa-calendar-o mr-2"></i>Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <div class="small mb-3">Projects</div>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item"><a href="#" class="d-flex nav-link"><i class="fa fa-fw fa-star-o align-self-center mr-2"></i>Analytics Redesign<span class="ml-auto align-self-center badge badge-secondary badge-pill">12</span></a></li>
+                        <li class="nav-item"><a href="#" class="d-flex nav-link"><i class="fa fa-fw fa-star-o align-self-center mr-2"></i>New Website<span class="ml-auto align-self-center badge badge-secondary badge-pill">4</span></a></li>
+                        <li class="nav-item"><a href="#" class="d-flex nav-link"><i class="fa fa-fw fa-star-o align-self-center mr-2"></i>Chart for Newsletter<span class="ml-auto align-self-center badge badge-secondary badge-pill">9</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-fw fa-plus mr-2"></i>Add New Project</a></li>
+                    </ul>
+                </div>`
+            snippet1 = `${snippet1}<div class="mb-4">
+                    <div class="small mb-3">People</div>
+                    <ul class="nav flex-column nav-pills">`
+            left.data.forEach((lef, lefIndex) => {
+                snippet1 = `${snippet1} <li class="nav-item">
+                            <a href="#" class="d-flex nav-link">
+                                <div class="media">
+                                    <div class="mr-3 align-self-center media-left media-middle">
+                                        <div class="avatar-image avatar-image--loaded">
+                                            <div class="avatar avatar--md avatar-image__image">
+                                                <div class="avatar__content"><img src="${lef.img}"></div>
+                                            </div>
+                                        </div>
+                                    </div>`
+                                        snippet1 = `${snippet1}<div class="media-body">
+                                        <div class="mt-0">${lef.name}</div><span class="small">${lef.sub}</span></div></div>`
+                                            snippet1 = `${snippet1}<i class="fa fa-fw fa-circle ${lef.text} ml-auto align-self-center ml-2"></i></a>`});
+            snippet1 = `${snippet1}</li><li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-fw fa-plus mr-2"></i>Add New People</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="d-flex flex-column flex-md-row mb-3 mb-md-0">
+                    <nav class="mr-auto d-flex align-items-center" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="active breadcrumb-item" aria-current="page"><a href="/"><i class="fa fa-home"></i></a></li>
+                            <li class="active breadcrumb-item" aria-current="page">Projects List</li>
+                        </ol>
+                    </nav>
+                    <div role="toolbar" class="btn-toolbar">
+                        <div role="group" class="mr-auto mr-md-2 btn-group"><a class="align-self-center btn btn-secondary active" aria-current="page" id="tooltipShowList" href="#"><i class="fa-fw fa fa-bars"></i></a><a class="align-self-center btn btn-secondary" id="tooltipShowGrid" href="#"><i class="fa-fw fa fa-th-large"></i></a></div>
+                        <div role="group" class="btn-group">
+                            <button id="tooltipAddNew" class="align-self-center btn btn-primary"><i class="fa-fw fa fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 Card_custom-card--border_5wJKy card">
+                    <div class="table-responsive-xl" >`
+            snippet1 = `${snippet1}<table class="mb-0 table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="align-middle bt-0">Star</th>
+                                    <th class="align-middle bt-0">Project</th>
+                                    <th class="align-middle bt-0">Status</th>
+                                    <th class="align-middle bt-0">Tasks Completed</th>
+                                    <th class="align-middle bt-0">People</th>
+                                    <th class="align-middle bt-0 text-right">Actions</th>
+                                </tr>
+                            </thead><tbody>`
+            input.data.forEach((user, Index) => {
+                snippet1 = `${snippet1}
+                                <tr>                     
+                                    <td class="align-middle">
+                                        <div class="text-inverse"><a href="#"><i class="fa fa-fw fa-lg fa-star-o"></i></a></div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <div><a href="#">${user.title}</a></div><span>Last Edited by: ${user.edit} <br>${user.date}</span></td>`
+                let color = ["badge-success", "badge-danger", "badge-warning", "badge-secondary"]
+                let reminder = Index % color.length;
+                snippet1 = `${snippet1}<td class="align-middle"><span class="badge ${color[reminder]} badge-pill">${user.status}</span></td>
+                                    <td class="align-middle">
+                                        <div class="mb-2 progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: ${user.per}%;"></div>
+                                        </div>
+                                        <div>Tasks Completed:<span class="text-inverse">${user.tc}</span></div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <div class="avatar-image avatar-image--loaded">
+                                            <div class="avatar avatar--md avatar-image__image">
+                                                <div class="avatar__content"><img src="${user.img}"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle text-right">                                       
+                                        <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-link"><i class="fa fa-gear"></i></button>
+                                    </td>
+                                </tr>`});
+            snippet1 = `${snippet1}</tbody>
+                        </table></div>
+                    <div class="d-flex justify-content-center pb-0 card-footer">
+                        <nav class="" aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a href="#" class="page-link" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-fw fa-angle-left"></i></span><span class="sr-only">Previous</span></a></li>
+                                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link" aria-label="Next"><span aria-hidden="true"><i class="fa fa-fw fa-angle-right"></i></span><span class="sr-only">Next</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>`
+            document.getElementById("table").innerHTML = snippet1;
+        }
+    </script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row" id="table">
+        </div>
+    </div>
+</body>
+<script>
+    snippet();
+</script>
+</html>

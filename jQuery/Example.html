@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="loadPagination">Load data</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+        </tbody>
+        </table>
+       <script>
+        let page=0;
+        $(".loadPagination").click(function(){
+            page = page+1;
+            arrayFilter();
+        });
+          function arrayFilter(){
+            
+                let page1 ={"data":[
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Ashwini","age":23,"gender":"female"},
+                {"name":"Ram","age":17,"gender":"male"},
+                ]}
+
+                let page2 ={"data":[
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Ashwini","age":23,"gender":"female"},
+                {"name":"Ram","age":17,"gender":"male"},
+                {"name":"Raj", "age":27, "gender":"Male"}
+                ]}
+
+                let page3 ={"data":[
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Boomika","age":20,"gender":"female"},
+                {"name":"Karthik", "age":29, "gender":"Male"},
+                {"name":"Abarna", "age":24, "gender":"Female"},
+                {"name":"Raj", "age":27, "gender":"Male"}]}
+
+                currentPage ={};
+                if(page === 2){
+                    currentPage = page2;
+                }
+                else if (page === 3){
+                    currentPage = page3;
+                }
+                else if (page === 1){
+                    currentPage = page1;
+                }
+
+                let innerHTML="";
+                currentPage.data?.forEach(user =>{
+                    innerHTML = `${innerHTML}<tr>
+                        <td>${user.name}</td>
+                        <td>${user.age}</td>
+                        <td>${user.gender}</td>
+                        </tr>`
+
+                });
+                $("tbody").append(innerHTML);
+            }
+       </script>
+    </body>
+</html>
