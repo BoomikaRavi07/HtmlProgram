@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let map = new Map([
+                ["name","Boomika"],
+                ["age","21"],
+                ["gender","Female"]
+            ]);
+            console.log(`name ${map.get("name")}`)
+            console.log(`age ${map.get("age")}`)
+            console.log(`gender ${map.get("gender")}`)
+
+            //JSON
+            let json = {name:"Boomika",age:21,gender:"Female"}
+            let{name,age} = json;
+
+            console.log(`name ${json.name} age${json.age} gender ${json.gender}`)
+            console.log()
+        </script>
+    </head>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let arr = [1,2,3,4,5,6]
+            let arr1 = [7,8,8,9,5,4,3]
+            let mergeArr = [...arr,...arr1]
+            console.log(arr+arr1);
+            console.log(...mergeArr);
+
+            const add = (a,b,c,d) =>{return a+b+c+d}
+            console.log("Normal add:"+add(2,5,6,7))
+
+            const spreadAdd = (...a)=>{
+                let c = 0;
+                for (val of a){
+                    c = c+ val;
+                }
+                //or
+                //a.forEachval=>{c=c+val})
+                return c;
+            }
+
+            console.log("spread add:"+spreadAdd(2,5,6,7))
+        </script>
+    </head>
+</html>

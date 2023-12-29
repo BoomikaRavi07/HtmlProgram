@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             function testing(a,b=12){
+                console.log("a :"+a)
+                console.log("b :"+b)
+                let c = a+b//logical implementation
+                return c;
+            }
+            
+            let fun = (a,b = 10, isAdd = true) =>{ return a+b;}
+
+            let val = testing(10);
+            let val1 = testing(10,20);
+            console.log(val)
+            console.log(val1)
+            console.log(fun(23));
+            console.log(fun(23,12));
+
+        </script>
+    </head>
+</html>

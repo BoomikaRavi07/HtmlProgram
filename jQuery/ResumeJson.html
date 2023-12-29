@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color: #fff;
+}
+.resume{
+    background-color: #ea80fc;
+    width: 700px;
+    margin: 50px auto;
+}
+.top{
+    background: var(--#e040fb);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+.h1{
+    text-transform: uppercase;
+    color: black;
+    font-size: 41px;
+    letter-spacing: 2px;
+}
+.p1{
+    text-transform: uppercase;
+    color: black;
+    margin: 0px auto;
+    letter-spacing: 5px;
+}
+
+    </style>
+    <script>
+            let user ={
+            "data":
+                [{"name":"BOOMIKA RAVI",
+                "position":"Full Stack Developer",
+                "phone":"8220673806",
+                "email":"boomikaravi0705@gmail.com",
+                "address":"2/45 Peruntholuvu Tirupur 641665",
+                "edu":[{"title1":"Bachelor Degree","degree":"BSC Information Technology","Percentage":"75%","collage":"Hindustan Collage of Arts And Science","year":"2020-2023"},
+                {"title2":"HSC","Percentage":"78%","school":"Government Higher Secondary School, Peruntholuvu","year":"2019-2020"},
+                {"title3":"SSLC","Percentage":"71%","school":"Government Higher Secondary School, Peruntholuvu","year":"2017-2018","lang":"Native Tamil",
+                "lang1":"Advance English"}],
+                "info":"Planning","info1":"Leadership","info2":"Punctual and Dedicated","info3":"Adoptable and flexiable"},
+                {"one":"Knowledge of computer","two":"Microsoft office(Word,Excel)"},
+                {"skill":"Java Basic","skill1":"HTML","skill2":"CSS"},
+                {"cer":"Introduction of BIG DATA","certifi":"HADOOP:Map Reduce"},
+                {"title":"DECENTRALIZED APPLICATION FOR ORGAN DONATION PORTAL"}]
+
+        }     
+        function loadContent() {
+            let htmlContent ="";     
+            user.data.forEach((user,index) => {
+                htmlContent = `${htmlContent}
+                <div class ="top">
+                    <h1>${user.name}</h1>
+			<p class="p1">${user.position}</p>
+		</div>
+		<div class="clearfix"></div>
+		<br><br>
+        <div class="left">
+			<h2>CONTACT</h2>
+			<p class="p2"><i class="fa fa-phone"></i>${user.phone}</p>
+			<p class="p2"><i class="fa fa-envelope"></i>${user.email}</p>
+			<p class="p2"><i class="fa fa-map-marker"></i>${user.address}</p>
+			<br>`
+            user.edu.foreach((list,index)=>{
+                htmlContent=`${htmlContent}
+			<h2>ACADEMIC QUALIFICATION</h2>
+		    <h4>${list.title}</h4>
+			<p>${list.Percentage}
+                <br>${list.degree}
+				<br>${list.collage}
+				<br>${list.year}</p>
+			<h4>HSC</h4>
+				<p>${list.Percentage}
+                <br>${list.school}
+                <br>${list.year}</p>
+			<h4>SSLC</h4>
+            <p>${list.Percentage}
+                <br>${list.school}
+                <br>${list.year}</p>
+			<h2>LANGUAGE</h2>
+			<ul class="one">
+				<li>${list.lang}</li>
+                <li>${list.lang1}</li>
+			</ul>
+			<br>`
+        });
+                htmlContent=`${htmlContent}
+			<h2>PERSONAL</h2>
+			<ul class="one">
+				<li>${user.info}</li>
+                <li>${user.info1}</li>
+				<li>${user.info2}</li>
+				<li>${user.info3}</li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="box">
+				<div class="batch">
+					<h2>COMPUTER SKILLS</h2>
+					<ul>
+					  <li>${user.one}</li>
+					  <li>${user.two}</li>
+					</ul> 
+				</div>
+				<div class="batch">
+					<h2>PROGRAMMING SKILLS</h2>
+					<ul>
+					  <li>${user.skill}</li>
+					  <li>${user.skill1}</li>
+					  <li${user.skill2}</li>
+					</ul> 
+				</div>
+				<div class="batch">
+					<h2>CERTIFICATS</h2>
+					<ul>
+					  <li>${user.cer}</li>
+					  <li>${user.certifi}</li>
+					</ul> 
+				</div>
+				<div class="batch">
+					<h2>PROJECT DESCRIPTION</h2>
+					<p><b>${user .title}</b></p>
+					<ul>
+					  <li>Careerinfo is an android application.</li>
+					  <li>It is an online Placement Cell Management System.</li>
+					  <li>The Name "Careerinfo" explains that students can get information directly from college admin regarding placement drives without any delay to build their career.</li>
+					</ul>
+				  </div>
+			</div>
+		</div>
+    </div>`
+});
+        
+        document.getElementById("pannel").innerHTML = htmlContent;
+        }
+        
+        </script>   
+</head>    
+    <body>
+	<div class="resume" id="pannel">
+		<div class="top">
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+            <script>
+                loadContent();
+                </script>
+</html>

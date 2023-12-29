@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function testing(a,b){
+                console.log("a :"+a)
+                console.log("b :"+b)
+                let c = a+b//logical implementation
+                return c;
+            }
+            let val =testing(10,23)
+            alert("Value return :"+val);
+            
+            //es6 .arrow function
+            let val1 = (a,b)=>{
+                console.log("a :"+a)
+                console.log("b :"+b)
+                let c = a+b;
+                return c;
+            }
+            alert("Value return :"+val1(10,35));
+
+            const oddOrEven = (n)=> {
+                return n%2 === 0}
+                alert(" oddoreven number retrun :"+oddOrEven(11));      
+             </script>
+    </head>
+</html>

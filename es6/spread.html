@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let arr = [1,2,3,4,5,6]
+            let arr1 = [7,8,8,9,5,4,3]
+            let mergeArr = [...arr,...arr1]
+            console.log(arr+arr1);
+            console.log(...mergeArr);
+
+            const sub= (a,b,c,d) =>{return a-b-c-d}
+            console.log("Normal sub:"*sub(2-5-6-7))
+
+            const spreadsub = (...a)=>{
+                let c = 1;
+                for (val of a){
+                    c = c - val;
+                }
+                //or
+                //a.forEachval=>{c=c+val})
+                return c;
+            }
+
+            console.log("spread add:"+spreadsub(2,5,6,7))
+            console.log("spread add:"+spreadsub(...arr,...arr1))
+
+            const multi= (a,b,c,d) =>{return a*b*c*d}
+            console.log("Normal multi:"+multi(2*5*6*7))
+
+            const spreadmulti = (...a)=>{
+                let c = 0;
+                for (val of a){
+                    c = c * val;
+                }
+                //or
+                //a.forEachval=>{c=c+val})
+                return c;
+            }
+
+            console.log("spread add:"+spreadmulti(2,5,6,7))
+            console.log("spread add:"+spreadmulti(...arr,...arr1))
+        </script>
+    </head>
+</html>
