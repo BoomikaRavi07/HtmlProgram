@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let mypromise = new Promise(function(onSuccess,onError){
+                setTimeout(()=>{
+                onSuccess("API Success")
+                //onError("API Error")
+                },3000);
+            });
+
+            mypromise.then(function(value){
+                console.log("Success:"+value)
+            }
+            ,function(val){
+                console.log("error:"+val)
+            });
+
+            let mypromise1 = new Promise(function(onSuccess,onError){
+                setTimeout(()=>{
+                onSuccess("API Success")
+                //onError("API Error")
+                },3000);
+            });
+            mypromise.then(function(value){
+console.log("Success:"+value)
+}
+,(val) =>{
+console.log("error:"+val)
+})
+        </script>
+    </head>
+</html>

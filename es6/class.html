@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            class Person{
+
+                constructor(name ,age, gender){
+                    this.name=name;
+                    this.age=age;
+                    this.gender=gender;
+                }
+            }
+            let person = new Person("Boomika",21,"Female");
+            console.log(person.name)
+            console.log(person.age)
+            console.log(person.gender)
+
+            class Person1{
+
+                constructor(...params){
+                    this.params=params;
+                }
+            }
+
+    let person1 = new Person1("Boomika",21,"Female","Tirupur","TN");
+    console.log(person1.params)
+
+        </script>
+    </head>
+</html>
